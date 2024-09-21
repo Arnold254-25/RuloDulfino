@@ -1,0 +1,28 @@
+ <h2 style="text-align: center;"> CONTACT FORM</h2> 
+   <div class="form-comtainer">
+    <form action="http://127.0.0.1:5500/page1.html">
+        <div class="input-cnt">
+            <i class="material-icons">Person</i>
+            <input type="text" placeholder="name" name="name" id="firstname">
+        </div>
+        <div class="input-cnt">
+            <i class="material-icons">Email</i>
+            <input type="text" placeholder="email" name="name">
+        </div>
+        <div class="input-cnt">
+            <i class="material-icons textarea-icon">messages</i>
+            <textarea placeholder="message here" name="message" id=""></textarea>
+        </div>
+
+        <div class="input-cnt">
+            <input type="submit" onclick="getValue()">
+        </div>
+    </form>
+   </div>
+   <script type="text/javascript">
+    function getValue(){
+        const val = document.getElementById("firstname5").value;
+        alert("Welcome")
+    }
+
+   </script>

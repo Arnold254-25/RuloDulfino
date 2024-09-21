@@ -108,3 +108,11 @@ li:hover{
     font-weight: bold;
     font-size: 28px;
 }
+
+.card-img-top:hover{
+    box-shadow: 20px 30px 40px 10px rgba(22, 1, 1, 0.684);
+    transition: 1s;
+    opacity: .8;
+    
+    
+}
