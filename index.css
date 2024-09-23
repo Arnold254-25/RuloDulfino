@@ -108,11 +108,34 @@ li:hover{
     font-weight: bold;
     font-size: 28px;
 }
+.btn:hover{
+    width:50%;
+    transition: 1s;
+box-shadow:10px 20px 30px 40px rgba(22, 1, 1, 0.444);
+}
+
+#page1card{
+    background:#f4d19e;
+}
+
+.card-img-top{
+    border-radius:10px;
+    
+}
 
 .card-img-top:hover{
     box-shadow: 20px 30px 40px 10px rgba(22, 1, 1, 0.684);
     transition: 1s;
     opacity: .8;
     
+    
+}
+.d-block{
+    width: 600px;
+    height: auto;
+}
+.wrapper{
+    display: flex;
+    overflow-x: auto;
     
 }
