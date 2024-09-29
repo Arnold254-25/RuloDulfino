@@ -1,0 +1,27 @@
+[
+    {
+    "id":1,
+    "name": "wine1",
+    "price": 200,
+    "image": "images/wine1.jpg"
+},
+{
+    "id":2,
+    "name": "wine2",
+    "price": 200,
+    "image": "images/wine2.jpg"
+},
+{
+    "id":3,
+    "name": "wine3",
+    "price": 200,
+    "image": "images/wine3.jpg"
+},
+{
+    "id":4,
+    "name": "wine4",
+    "price": 200,
+    "image": "images/wine4.jpg"
+}
+
+]

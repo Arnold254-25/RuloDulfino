@@ -10,13 +10,22 @@
 </head>
 <style>
   body{
-    background:black;
+    background:white;
+    margin: 0;
   }
-  .card{
-    border: 0.5px solid rgb(174, 73, 73);
-    background:black;
-    color: white;
-  }
+.card .item img{
+  width: 100%;
+  filter: drop-shadow(0 50px 20px rgb(4, 4, 21));
+}
+
+.card .item button{
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  
+}
   .card:hover{
 box-shadow: 5px 10px 5px 10px rgba(240, 8, 8, 0.555);
 width:90%;
@@ -25,16 +34,103 @@ width:90%;
   .img-fluid:hover{
     width:50%;
   }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px o;
+  }
+  
+  header .icon-cart span{
+    display:flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    border-radius: 50px;
+  }
+  .cartTab{
+    width: 400px;
+    background-color: cadetblue;
+    color: #eee;
+    position: fixed;
+   inset: 0 -400px 0 auto;
+   display: grid;
+   grid-template-rows: 80px 2fr 80px;
+   transition: .5s;
+  }
+  .container-fluid{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    transition: transform .5s;
+  }
+  .cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  
+  .cartTab  button{
+    background-color: #E8BC0E;
+    border: none;
+  }
+  .cartTab .listCart .item img{
+    width: 100%;
+  }
+  .cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+
+  }
+  .listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+  }
+  .listCart{
+    overflow: auto;
+  }
+  body .showcart .cartTab{
+    inset: 0 0 0 auto;
+  }
+  body .showcart .container-fluid{
+transform: translateX(-250px);
+  }
 </style>
-<body>
+<body class="showcart">
     
 
    <div class="container-fluid">
-    <h1 style="text-align: center;">title</h1>
+<header>
+  <div class="title">Product List</div>
+  <div class="icon-cart">
+    <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+    </svg>
+    <span>0</span>
+    
+  </div>
+</header>
 
 <!--1-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -47,17 +143,18 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button class="btn btn-primary">buy</button>
+    <button>add to cart</button>
+    
     <!---->
    
-    
+  </div>
   
   </div>
 </div>
 
 <!--2-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine2.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -70,13 +167,13 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
 
     
-  
+  </div>
   </div>
 </div>
 
@@ -84,7 +181,7 @@ width:90%;
 <!--3-->
 
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine3.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -97,11 +194,11 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
   
-    
+  </div>
   
   </div>
 </div>
@@ -109,7 +206,7 @@ width:90%;
 
 <!--4-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine4.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -122,12 +219,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
 
 
-    
+  </div>
   
   </div>
 </div>
@@ -135,7 +232,7 @@ width:90%;
 
 <!--5-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine5.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -148,12 +245,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
    
 
-    
+  </div>
   
   </div>
 </div>
@@ -161,7 +258,7 @@ width:90%;
 
 <!--6-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine6.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -174,12 +271,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
    
-    
+  </div>
   
   </div>
 </div>
@@ -187,7 +284,7 @@ width:90%;
 
 <!--7-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine7.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -200,11 +297,11 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
-  
+  </div>
   
   </div>
 </div>
@@ -212,7 +309,7 @@ width:90%;
 
 <!--8-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine8.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -226,12 +323,12 @@ width:90%;
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-  
+    <button>add to cart</button>
     <!---->
     
    
 
-    
+  </div>
   
   </div>
 </div>
@@ -239,7 +336,7 @@ width:90%;
 
 <!--9-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine9.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -252,12 +349,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
 
-    
+  </div>
   
   </div>
 </div>
@@ -266,7 +363,7 @@ width:90%;
 <!--10-->
 
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine10.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -279,12 +376,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
   
 
-    
+  </div>
   
   </div>
 </div>
@@ -292,7 +389,7 @@ width:90%;
 
 <!-- 11 -->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine11.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -305,20 +402,20 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
    
     
-  
+  </div>
   </div>
 </div>
 
 
 <!--12-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine12.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -331,12 +428,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
  
-    
+  </div>
   
   </div>
 </div>
@@ -345,7 +442,7 @@ width:90%;
 <!--13-->
 
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine13.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -358,12 +455,12 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
  
-    
+  </div>
   
   </div>
 </div>
@@ -371,7 +468,7 @@ width:90%;
 
 <!--14-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine14.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -384,20 +481,20 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
 
     
-  
+  </div>
   </div>
 </div>
 
 
 <!--15-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine15.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -410,11 +507,11 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
    
-    
+  </div>
   
   </div>
 </div>
@@ -423,7 +520,7 @@ width:90%;
 <!--16-->
 
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine16.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -437,10 +534,10 @@ width:90%;
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-  
+    <button>add to cart</button>
     <!---->
     
-
+  </div>
   
   </div>
 </div>
@@ -448,7 +545,7 @@ width:90%;
 <!--17-->
 
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine17.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -461,11 +558,11 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
- 
+  </div>
     
   
   </div>
@@ -474,7 +571,7 @@ width:90%;
 
 <!--18-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine18.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -488,18 +585,17 @@ width:90%;
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-  
+    <button>add to cart</button>
     <!---->
  
-    
-  
+  </div>
   </div>
 </div>
 
 
 <!--19-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine19.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -512,19 +608,19 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
     
   
     
-  
+  </div>
   </div>
 </div>
 
 <!--20-->
 <div class="card float-end mx-2 my-3" style="width: 18rem;">
-  
+  <div class="item">
   <img src="images/wine20.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <i class="fa fa-star"></i>
@@ -537,42 +633,43 @@ width:90%;
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-   
+    <button>add to cart</button>
   
     <!---->
 
     
-  
+  </div>
   </div>
 
 </div>
+   </div>
+   
+   <div class="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+    <div class="item">
+      <div class="image">
+        <img src="images/wine1.jpg" alt="">
+      </div>
+      <div class="name">
+        name
+      </div>
+      <div class="totalprice">
+        200
+      </div>
+      <div class="quantity">
+        <span class="minus"><</span>
+        <span>1</span>
+        <span class="plus">></span>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+    <button class="close">Close</button>
+    <button class="Checkout">Check Out</button>
    </div>
 
+   <script src="index.js"></script>
 
 
 
