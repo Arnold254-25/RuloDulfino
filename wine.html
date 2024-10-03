@@ -10,12 +10,17 @@
 </head>
 <style>
   body{
-    background:white;
+    background:#718355;
     margin: 0;
+  }
+  .card{
+    background: #CFE189;
   }
 .card .item img{
   width: 100%;
-  filter: drop-shadow(0 50px 20px rgb(4, 4, 21));
+  overflow: hidden;
+ 
+
 }
 
 .card .item button{
@@ -27,19 +32,22 @@
   
 }
   .card:hover{
-box-shadow: 5px 10px 5px 10px rgba(240, 8, 8, 0.555);
+box-shadow: 5px 10px 5px 10px #E9F5DB;
 width:90%;
 
   }
   .img-fluid:hover{
     width:50%;
   }
+
+
   header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px o;
   }
+
   
   header .icon-cart span{
     display:flex;
@@ -52,6 +60,8 @@ width:90%;
     position:relative;
     border-radius: 50px;
   }
+
+
   .cartTab{
     width: 400px;
     background-color: cadetblue;
@@ -61,13 +71,27 @@ width:90%;
    display: grid;
    grid-template-rows: 80px 2fr 80px;
    transition: .5s;
+   overflow: hidden;
   }
+  .cartTab .btn{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .cartTab .btn .close{
+    background-color: white;
+    color: black;
+  }
+
+
   .container-fluid{
     margin: auto;
     text-align: center;
     padding: 10px;
     transition: transform .5s;
   }
+
+
   .cartTab h1{
     padding: 20px;
     margin: 0;
@@ -78,10 +102,15 @@ width:90%;
   .cartTab  button{
     background-color: #E8BC0E;
     border: none;
+    border-radius: 20px;
   }
+
+
   .cartTab .listCart .item img{
     width: 100%;
   }
+
+
   .cartTab .listCart .item{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
@@ -90,6 +119,8 @@ width:90%;
     align-items: center;
 
   }
+
+
   .listCart .quantity span{
     display: inline-block;
     width: 25px;
@@ -99,21 +130,35 @@ width:90%;
     border-radius: 50%;
     cursor: pointer;
   }
+
+
   .listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: #eee;
   }
+.listCart .items:nth-child(even){
+  background-color: #eee1;
+}
+.listCart ::-webkit-scrollbar{
+  width: 0;
+}
   .listCart{
     overflow: auto;
   }
-  body .showcart .cartTab{
+
+
+  body.showcart .cartTab{
     inset: 0 0 0 auto;
   }
+
+
   body .showcart .container-fluid{
 transform: translateX(-250px);
   }
+
+
 </style>
-<body class="showcart">
+<body class="">
     
 
    <div class="container-fluid">
@@ -143,7 +188,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
     
     <!---->
    
@@ -167,7 +212,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -194,7 +239,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
   
@@ -219,7 +264,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
 
@@ -245,8 +290,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
-  
+    <button class="addCart">add to cart</button>
     <!---->
    
 
@@ -271,7 +315,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -297,7 +341,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -323,7 +367,7 @@ transform: translateX(-250px);
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
     <!---->
     
    
@@ -349,7 +393,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -376,8 +420,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
-  
+    <button class="addCart">add to cart</button>
     <!---->
   
 
@@ -402,7 +445,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -428,8 +471,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
-  
+    <button class="addCart">add to cart</button>
     <!---->
     
  
@@ -455,7 +497,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -481,7 +523,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -507,8 +549,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
-  
+    <button class="addCart">add to cart</button>
     <!---->
    
   </div>
@@ -534,7 +575,7 @@ transform: translateX(-250px);
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
     <!---->
     
   </div>
@@ -558,8 +599,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
-  
+    <button class="addCart">add to cart</button>
     <!---->
     
   </div>
@@ -585,7 +625,7 @@ transform: translateX(-250px);
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
    
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
     <!---->
  
   </div>
@@ -608,7 +648,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
     
@@ -633,7 +673,7 @@ transform: translateX(-250px);
     <h4>	&#8364; 115<sup>14</sup></h4>
     <p class="card-text">QUERCIABELLA</p>
     <p>2008</p>
-    <button>add to cart</button>
+    <button class="addCart">add to cart</button>
   
     <!---->
 
@@ -665,8 +705,10 @@ transform: translateX(-250px);
     </div>
 
     </div>
+    <div class="btn">
     <button class="close">Close</button>
     <button class="Checkout">Check Out</button>
+    </div>
    </div>
 
    <script src="index.js"></script>
