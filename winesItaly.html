@@ -4,27 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Nosifer&family=Oooh+Baby&family=Parisienne&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
     <title>Document</title>
+    <style>
+      
+      .card:hover{
+        box-shadow: 5px 3px 5px 3px rgba(0,0,0, 0.8);
+        height: 10%;
+      }
+
+
+         /*NAVBAR*/
+
+
+         .navbar-brand{
+    
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+
+  
+}
+#offcanvasNavbar{
+    background:#EAE7DC;
+    border: 2px solid black;
+}
+  li {
+    font-size: 23px;
+    font-family: "Libre Caslon Text", serif;
+    transition: 1s;
+}
+li:hover{
+    background:#865D36;
+    border-radius: 10px;
+    opacity: .9;
+    
+}
+nav{
+    background: #f4d19e;
+}
+.nav-item a{
+    transition: all ease-in-out;
+}
+.dropdown-menu{
+    background: #EAE7DC;
+}
+      /* NAVBAR-END */
+
+
+
+
+    </style>
 </head>
 <body>
+
+
+    <!--NAV-->
+    <nav class="navbar" id="navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color:maroon;font-size: 40px;font-weight: bold;">Rulo<span style="color: black;">Dulfino</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="navbar-brand" style="color:maroon;font-size: 40px;font-weight: bold;">Rulo<span style="color:black;">Dulfino</span></a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">WINES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">SPIRITS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WHISKEY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BEER</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                  <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GIFTS & ACCESSORIES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">WINE GIFT</a></li>
+                    <li><a class="dropdown-item" href="#">WHISKEY GIFT</a></li>
+                    <li>
+                  <a  class="dropdown-item" href="">BEER & BRAN GIFT</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">GIFT VOURCHER</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+            </ul>
+            
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--NAV END-->
 
 
     <!--1-->
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          
+          <h5 class="card-title">Passofondo Catarratto</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	<i>&#8364; 11<sup>97</sup></i></h4>
+          <p class="card-text">Tenute Maltese</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -39,18 +161,14 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          <h5 class="card-title">Etna Rosato</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 34<sup>99</sup></h4>
+          <p class="card-text">Restivo Wine</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -65,18 +183,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Pantalleria Bianco</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 21<sup>96</sup></h4>
+          <p class="card-text">Tenuata Bostonaca</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -92,18 +207,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy4.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.0</strong></i></button>
+          
+          <h5 class="card-title">Nero d'Avola</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 15<sup>99</sup></h4>
+          <p class="card-text">URSO</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -118,18 +230,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy5.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
+        
+          <h5 class="card-title">Zibibbo</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 15<sup>98</sup></h4>
+          <p class="card-text">URSO</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -145,18 +254,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy6.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
+        
+          <h5 class="card-title">Nerello Mascalese di Adele</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 18<sup>00</sup></h4>
+          <p class="card-text">FUEDO MONTONI</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -171,18 +277,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy7.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.1</strong></i></button>
+          
+          <h5 class="card-title">Nerello Mascalese'di Elio</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 27<sup>44</sup></h4>
+          <p class="card-text">FUEDO MONTONI</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -197,18 +300,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy8.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.8</strong></i></button>
+          
+          <h5 class="card-title">Le Volte dell'Ornellalia</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 312<sup>67</sup></h4>
+          <p class="card-text">Ornellalia</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -223,18 +323,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy9.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Milazzo Metodo Classico</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
+          <h4>	&#8364; 63<sup>94</sup></h4>
           <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -249,18 +346,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy10.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.0</strong></i></button>
+          
+          <h5 class="card-title">Langhe Freisa</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 40<sup>98</sup></h4>
+          <p class="card-text">GUISEPPE RINALDI</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -275,18 +369,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy11.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
+          
+          <h5 class="card-title">Langhe Nebbiolo</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 68<sup>77</sup></h4>
+          <p class="card-text">GUISEPPE RINALDI</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -301,18 +392,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy12.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          <h5 class="card-title">Susucaro Rosato</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
+          <h4>	&#8364; 35<sup>74</sup></h4>
           <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -327,18 +415,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy13.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Magari</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 87<sup>33</sup></h4>
+          <p class="card-text">CA' MARCANDA GAJA</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -354,18 +439,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy15.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
+    
+          <h5 class="card-title">Perricone</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 15<sup>78</sup></h4>
+          <p class="card-text">FINA</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -381,18 +463,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy14.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Lodano Bianco</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 35<sup>98</sup></h4>
+          <p class="card-text">TUA RITA</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -407,18 +486,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy16.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Arcodace</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 15<sup>90</sup></h4>
+          <p class="card-text">ASSULI</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -433,18 +509,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy17.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.5</strong></i></button>
+          
+          <h5 class="card-title">Chianti Classico</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	<strike>&#8364; 20<sup>99</sup></strike>  <span style="color: red;">&#8364; 17<sup>55</sup></span></h4>
+          <p class="card-text">CASTELLERI DI CASTELLINA</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -460,18 +533,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy18.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Cervaro della Sala</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 86<sup>00</sup></h4>
+          <p class="card-text">CASTELLO DELLA SALA</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -487,18 +557,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy19.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Zibibbo</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 12<sup>00</sup></h4>
+          <p class="card-text">FODERA'</p>
+          <p>2023</p>
           <button class="addCart">add to cart</button>
         
           <!---->
@@ -514,18 +581,15 @@
 
     <div class="card float-end mx-2 my-3" style="width: 18rem;">
         <div class="item">
-        <img src="images/wine4.jpg" class="card-img-top" alt="...">
+        <img src="images/italy20.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-full"></i>
-          <h5 class="card-title">Camaratina</h5>
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          <h5 class="card-title">Lafa`o Chardonnay</h5>
          
-          <h4>	&#8364; 115<sup>14</sup></h4>
-          <p class="card-text">QUERCIABELLA</p>
-          <p>2008</p>
+          <h4>	&#8364; 46<sup>99</sup></h4>
+          <p class="card-text">COLTERENZIO</p>
+          <p>2022</p>
           <button class="addCart">add to cart</button>
         
           <!---->
