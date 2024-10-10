@@ -28,6 +28,53 @@
    </script>
 
 
+<_________________>
+<div class="container-fluid" style="background-color: black; height: 400px; margin-top: 100px;">
+<div class="rulo">
+  <img src="images/Rulo.png" alt="" style="width:200px;margin: 0; border: 1px solid black;">
+
+  <div class="card1 float-end mx-2" style="width:350px;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group">TEL1:0110430727</li>
+    
+      <li class="list-group">Email:arnoldtony@gmail.com</li>
+      
+      <li class="list-group">TEL2:0711200853</li>
+      
+      <li class="list-group">rulodulfino@gmail.com</li>
+      <li class="list-group">address:kileleshwa.pp14 00589 rulo</li>
+    </ul>
+  
+  </div>
+
+  
+
+  <div class="card1 float-end mx-2 " style="width: 350px;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group">Who are we</li>
+      <li class="list-group">Sales Conditions</li>
+      <li class="list-group">Return Conditions</li>
+      <li class="list-group">Press</li>
+    </ul>
+   
+  </div>
+
+
+  <div class="card1 float-end mx-2" style="width:350px;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group">Careers</li>
+      <li class="list-group">Investors</li>
+      <li class="list-group">Partners</li>
+      <li class="list-group">Corporate Gifts</li>
+    </ul>
+ 
+  </div>
+
+  
+
+</div>
+</div>
+
 
 
 

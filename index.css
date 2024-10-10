@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
- background:#718355;;
+ background:white;
 }
 .container{
     margin: 100px 0 0 200px;
@@ -59,7 +59,9 @@ h2{
 }
 
 
-
+#wines{
+    text-align: center;
+}
 
 
 
@@ -92,7 +94,7 @@ li:hover{
     background:#865D36;
     
 } */
-#button-home{
+/* #button-home{
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left :30px;
@@ -102,17 +104,8 @@ li:hover{
     border-radius: 70px 10px 70px 10px;
  
 
-}
-#buy{
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 28px;
-}
-.btn:hover{
-    width:50%;
-    transition: 1s;
-box-shadow:10px 20px 30px 40px rgba(22, 1, 1, 0.444);
-}
+} */
+
 
 #page1card{
     background:#f4d19e;
