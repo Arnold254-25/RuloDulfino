@@ -142,3 +142,14 @@ li:hover{
     overflow: hidden;
     width: 325px;
 }
+@media screen and (max-width:992px){
+    .card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
