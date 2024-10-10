@@ -132,3 +132,13 @@ li:hover{
     overflow-x: auto;
     
 }
+.card-container{
+    justify-content: center;
+    display:flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+.card{
+    overflow: hidden;
+    width: 325px;
+}
