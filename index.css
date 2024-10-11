@@ -148,7 +148,7 @@ li:hover{
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 730px) {
     .card-container{
         grid-template-columns: repeat(1, 1fr);
     }
