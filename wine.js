@@ -116,19 +116,19 @@ changeQuantity(product_id, type);
 })
 
 const changeQuantity = (product_id, type) => {
-    let positionItemCart = carts.findIndex((value) => value.product_id == product_id);
-    if(positionItemCart >= 0){
+    let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
+    if(positionItemInCart >= 0){
         switch (type){
             case 'plus':
-                carts(positionItemCart).quantity = carts[positionItemCart].quantity +1;
+                carts(positionItemInCart).quantity = carts[positionItemInCart].quantity + 1;
             break;
 
             default:
-                let valueChange = carts[positionItemCart]. quantity - 1;
+                let valueChange = carts[positionItemInCart]. quantity - 1;
                 if(valueChange > 0){
-                    carts[positionItemCart].quantity = valueChange;
+                    carts[positionItemInCart].quantity = valueChange;
                 }else{
-                    carts.splice(positionItemCart, 1);
+                    carts.splice(positionItemInCart, 1);
                 }
                 break;
         }
