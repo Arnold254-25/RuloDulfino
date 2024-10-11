@@ -55,7 +55,37 @@ body{
   a{
     text-decoration: none;
   }
- 
+ table{
+  width: 100%;
+  border-collapse: collapse;
+
+ }
+ footer{
+  background-color: black;
+  color: white;
+  margin-top: 70px;
+ }
+
+ td, th {
+  padding: 10px;
+  border-left: 1px solid white;
+}
+table img{
+  border-radius: 1px solid black;
+}
+
+
+ @media screen and (max-width:992px){
+    .conti{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .conti{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 </style>
@@ -187,7 +217,55 @@ body{
 
 
 
+<footer>
 
+  <div class="conti">
+
+
+
+<table>
+
+  <img src="images/Rulo.png" alt="" style="width: 200px; border: 1px solid black;">
+
+  <tr>
+    <th>Info 1</th>
+    <th>Info 2</th>
+    <th>Info 3</th>
+  </tr>
+  <tr>
+    <td>Who  are </td>
+    <td>Tel1:0723435712</td>
+    <td>Investors</td>
+  </tr>
+  <tr>
+    <td>Sales Conditions</td>
+    <td>TEL2:011456000</td>
+    <td>Headquaters</td>
+  </tr>
+  <tr>
+    <td>Tel1 :07224566737</td>
+    <td>Admin:0983635</td>
+    <td>Gifts</td>
+  </tr>
+  <tr>
+    <td>countries</td>
+    <td>addrees:45-street,panaman</td>
+    <td>Print</td>
+  </tr>
+  <tr>
+    <td>Bachelors</td>
+    <td>address2:65avenue-11</td>
+    <td>Privacy policy</td>
+  </tr>
+  <tr>
+    <td>News</td>
+    <td>more info</td>
+    <td>Return Policy</td>
+  </tr>
+</table>
+
+
+</footer>
 
 
 

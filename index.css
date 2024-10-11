@@ -139,7 +139,7 @@ li:hover{
 
 }
 .card-container .card img{
-    width: 90%;
+    width: 100%;
 }
 
 @media screen and (max-width:992px){
