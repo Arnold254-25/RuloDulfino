@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
- background:#8F8681;
+ background:#1F1F29;
 }
 .container{
     margin: 100px 0 0 200px;
@@ -30,7 +30,7 @@ width: 25%;
 }
 
 nav{
-    background: #E1DCD9;
+    background: #FEC6AD;
 }
 .navbar-brand{
     
@@ -133,7 +133,7 @@ li:hover{
     
 }
 .card{
-     background-color: #A67F78;
+     background-color:#D3D6C3;
 }
 .card-container{
     display:grid;
