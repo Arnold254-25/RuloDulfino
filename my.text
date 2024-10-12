@@ -239,3 +239,345 @@
 
 
     </div>
+
+
+
+    ****************************************************
+    wine1----
+            <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          
+          <h5 class="card-title">Passofondo Catarratto</h5>
+         
+          <h4>	<i>&#8364; 11<sup>97</sup></i></h4>
+          <p class="card-text">Tenute Maltese</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine2---
+
+       <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          <h5 class="card-title">Etna Rosato</h5>
+         
+          <h4>	&#8364; 34<sup>99</sup></h4>
+          <p class="card-text">Restivo Wine</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine3---
+   <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Pantalleria Bianco</h5>
+         
+          <h4>	&#8364; 21<sup>96</sup></h4>
+          <p class="card-text">Tenuata Bostonaca</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+
+        wine4--
+        <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Pantalleria Bianco</h5>
+         
+          <h4>	&#8364; 21<sup>96</sup></h4>
+          <p class="card-text">Tenuata Bostonaca</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine--5
+        <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
+        
+          <h5 class="card-title">Zibibbo</h5>
+         
+          <h4>	&#8364; 15<sup>98</sup></h4>
+          <p class="card-text">URSO</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+
+
+        wine--6
+
+        <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
+        
+          <h5 class="card-title">Nerello Mascalese di Adele</h5>
+         
+          <h4>	&#8364; 18<sup>00</sup></h4>
+          <p class="card-text">FUEDO MONTONI</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+        
+        wine7--
+
+           <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.1</strong></i></button>
+          
+          <h5 class="card-title">Nerello Mascalese'di Elio</h5>
+         
+          <h4>	&#8364; 27<sup>44</sup></h4>
+          <p class="card-text">FUEDO MONTONI</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine8---
+
+ <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.8</strong></i></button>
+          
+          <h5 class="card-title">Le Volte dell'Ornellalia</h5>
+         
+          <h4>	&#8364; 312<sup>67</sup></h4>
+          <p class="card-text">Ornellalia</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine9----
+           <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Milazzo Metodo Classico</h5>
+         
+          <h4>	&#8364; 63<sup>94</sup></h4>
+          <p class="card-text">QUERCIABELLA</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine10---
+            <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.0</strong></i></button>
+          
+          <h5 class="card-title">Langhe Freisa</h5>
+         
+          <h4>	&#8364; 40<sup>98</sup></h4>
+          <p class="card-text">GUISEPPE RINALDI</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+        
+
+        wine11-----
+
+    <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
+          
+          <h5 class="card-title">Langhe Nebbiolo</h5>
+         
+          <h4>	&#8364; 68<sup>77</sup></h4>
+          <p class="card-text">GUISEPPE RINALDI</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine12-----
+
+              <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          <h5 class="card-title">Susucaro Rosato</h5>
+         
+          <h4>	&#8364; 35<sup>74</sup></h4>
+          <p class="card-text">QUERCIABELLA</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine13-----
+          <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Magari</h5>
+         
+          <h4>	&#8364; 87<sup>33</sup></h4>
+          <p class="card-text">CA' MARCANDA GAJA</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine14----
+
+  <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
+    
+          <h5 class="card-title">Perricone</h5>
+         
+          <h4>	&#8364; 15<sup>78</sup></h4>
+          <p class="card-text">FINA</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+        
+
+        wine15--
+
+  <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Lodano Bianco</h5>
+         
+          <h4>	&#8364; 35<sup>98</sup></h4>
+          <p class="card-text">TUA RITA</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine16---
+
+      <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Arcodace</h5>
+         
+          <h4>	&#8364; 15<sup>90</sup></h4>
+          <p class="card-text">ASSULI</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine17----
+
+            <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.5</strong></i></button>
+          
+          <h5 class="card-title">Chianti Classico</h5>
+         
+          <h4>	<strike>&#8364; 20<sup>99</sup></strike>  <span style="color: red;">&#8364; 17<sup>55</sup></span></h4>
+          <p class="card-text">CASTELLERI DI CASTELLINA</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine18-----
+
+          <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
+          
+          <h5 class="card-title">Cervaro della Sala</h5>
+         
+          <h4>	&#8364; 86<sup>00</sup></h4>
+          <p class="card-text">CASTELLO DELLA SALA</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        wine19----
+
+             <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Zibibbo</h5>
+         
+          <h4>	&#8364; 12<sup>00</sup></h4>
+          <p class="card-text">FODERA'</p>
+          <p>2023</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+
+        win20-------
+
+   <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
+          
+          <h5 class="card-title">Lafa`o Chardonnay</h5>
+         
+          <h4>	&#8364; 46<sup>99</sup></h4>
+          <p class="card-text">COLTERENZIO</p>
+          <p>2022</p>
+          <button class="addCart">add to cart</button>
+        
+          <!---->
+      
+      
+        </div>
+

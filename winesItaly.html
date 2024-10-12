@@ -11,7 +11,13 @@
 
     <title>Document</title>
     <style>
-      
+      body{
+        background-color: #8F8681;
+      }
+      .card{
+        background-color:#A67F78;
+
+      }
       .card:hover{
         box-shadow: 5px 3px 5px 3px rgba(0,0,0, 0.8);
         height: 10%;
@@ -46,7 +52,7 @@ li:hover{
     
 }
 nav{
-    background: #f4d19e;
+    background:#E1DCD9;
 }
 .nav-item a{
     transition: all ease-in-out;
@@ -55,6 +61,16 @@ nav{
     background: #EAE7DC;
 }
       /* NAVBAR-END */
+
+.fagi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.fagi>*{
+  margin: 40px;
+}
 
 
 
@@ -67,7 +83,7 @@ nav{
     <!--NAV-->
     <nav class="navbar" id="navigation">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><span style="color:maroon;font-size: 40px;font-weight: bold;">Rulo<span style="color: black;">Dulfino</span></a>
+        <a class="navbar-brand" href="#"><span style="color:maroon;font-size: 40px;">Rulo<span style="color: black;">Dulfino</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -132,13 +148,18 @@ nav{
     </nav>
     <!--NAV END-->
 
+    <div class="fagi">
 
     <!--1-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy1.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+        
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
           
           
@@ -153,16 +174,21 @@ nav{
       
       
         </div>
-        
+
         </div>
       </div>
+    </div>
 
     <!--2-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy2.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+       
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
           <h5 class="card-title">Etna Rosato</h5>
          
@@ -175,16 +201,20 @@ nav{
       
       
         </div>
-        
+
         </div>
       </div>
-
+    </div>
     <!--3-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy3.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+       
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
           
           <h5 class="card-title">Pantalleria Bianco</h5>
@@ -198,23 +228,28 @@ nav{
       
       
         </div>
-        
+
         </div>
       </div>
+    </div>
 
     <!--4-->
 
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.0</strong></i></button>
-          
-          <h5 class="card-title">Nero d'Avola</h5>
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy4.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
          
-          <h4>	&#8364; 15<sup>99</sup></h4>
-          <p class="card-text">URSO</p>
+          <div class="card-body">
+            <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
+          
+          <h5 class="card-title">Pantalleria Bianco</h5>
+         
+          <h4>	&#8364; 21<sup>96</sup></h4>
+          <p class="card-text">Tenuata Bostonaca</p>
           <p>2022</p>
           <button class="addCart">add to cart</button>
         
@@ -222,16 +257,23 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--5-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy5.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+      
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
         
           <h5 class="card-title">Zibibbo</h5>
@@ -245,17 +287,24 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
 
     <!--6-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy6.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy6.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+     
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
         
           <h5 class="card-title">Nerello Mascalese di Adele</h5>
@@ -269,16 +318,23 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--7-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy7.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy7.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+     
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.1</strong></i></button>
           
           <h5 class="card-title">Nerello Mascalese'di Elio</h5>
@@ -292,16 +348,20 @@ nav{
       
       
         </div>
-        
+
         </div>
       </div>
+    </div>
 
     <!--8-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy8.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy8.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.8</strong></i></button>
           
           <h5 class="card-title">Le Volte dell'Ornellalia</h5>
@@ -315,16 +375,20 @@ nav{
       
       
         </div>
-        
         </div>
       </div>
+    </div>
 
     <!--9-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy9.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+     
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
           
           <h5 class="card-title">Milazzo Metodo Classico</h5>
@@ -338,16 +402,21 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--10-->
-
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy10.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy11.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+       
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.0</strong></i></button>
           
           <h5 class="card-title">Langhe Freisa</h5>
@@ -361,16 +430,22 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--11-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy11.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy11.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+     
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.2</strong></i></button>
           
           <h5 class="card-title">Langhe Nebbiolo</h5>
@@ -384,16 +459,22 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--12-->
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy12.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+     
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy12.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
           
           <h5 class="card-title">Susucaro Rosato</h5>
@@ -407,16 +488,22 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--13-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy13.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy13.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+       
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
           
           <h5 class="card-title">Magari</h5>
@@ -430,17 +517,25 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--14-->
 
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy14.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+      
+          
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy15.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.3</strong></i></button>
     
           <h5 class="card-title">Perricone</h5>
@@ -454,17 +549,24 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
 
     <!--15-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy14.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy15.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+    
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
           
           <h5 class="card-title">Lodano Bianco</h5>
@@ -478,16 +580,24 @@ nav{
       
       
         </div>
-        
+
+
+
         </div>
       </div>
+    </div>
 
     <!--16-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy16.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy16.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+  
+
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
           
           <h5 class="card-title">Arcodace</h5>
@@ -501,16 +611,21 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
     <!--17-->
-
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy17.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy17.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+   
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.5</strong></i></button>
           
           <h5 class="card-title">Chianti Classico</h5>
@@ -524,17 +639,23 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
 
     <!--18-->
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy18.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+      
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy18.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.7</strong></i></button>
           
           <h5 class="card-title">Cervaro della Sala</h5>
@@ -548,17 +669,24 @@ nav{
       
       
         </div>
-        
+
+
+
         </div>
       </div>
+    </div>
 
 
     <!--19-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy19.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy19.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+      
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.6</strong></i></button>
           
           <h5 class="card-title">Zibibbo</h5>
@@ -572,17 +700,25 @@ nav{
       
       
         </div>
-        
+
+
+
         </div>
       </div>
+    </div>
 
 
     <!--20-->
 
-    <div class="card float-end mx-2 my-3" style="width: 18rem;">
-        <div class="item">
-        <img src="images/italy20.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="card mb-3" style="width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/italy20.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+    
+          
+          <div class="card-body">
             <button style="border: none; background:lavender;"><i class="fa fa-star" style="color:gold;"><strong style="color: black;"> 4.4</strong></i></button>
           
           <h5 class="card-title">Lafa`o Chardonnay</h5>
@@ -596,11 +732,13 @@ nav{
       
       
         </div>
-        
+
+
         </div>
       </div>
+    </div>
 
-
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
