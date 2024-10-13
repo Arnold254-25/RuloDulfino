@@ -6,6 +6,9 @@
     padding-top: 10px;
 transition: transform .5s;
 }
+body{
+    background-color: #1F1F29;
+}
 svg{
     width: 30px;
 }
@@ -23,6 +26,7 @@ header .title{
 }
 header .icon-cart{
     position: relative;
+    color: yellow;
 }
 header .icon-cart span{
     display:flex;
@@ -47,9 +51,10 @@ right: -20px;
     gap: 20px;
 }
 .listProduct .item{
-    background-color: #eeeeee;
+    background-color:#FEC6AD;
     padding: 20px;
     border-radius: 20px;
+
 }
 .listProduct .item h2{
     font-weight: 500;
