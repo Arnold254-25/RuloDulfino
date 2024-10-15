@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Nosifer&family=Oooh+Baby&family=Parisienne&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>RuloDulfino</title>
     
 
     <style>
@@ -74,6 +76,110 @@ body{
 .mango>*{
   margin: 40px;
 }
+
+
+.contain{
+        max-width: 1170px;
+      
+        margin: auto;
+      }
+      ul{
+        list-style: none;
+      }
+       a{
+        text-decoration: none;
+       }
+      .row{
+        display: flex;
+        flex-wrap:wrap;
+      }
+      
+      /* footer*/
+       .footer{
+        background-color: black;
+        color: white;
+        margin-top: 70px;
+      
+        
+       }
+      .footer-col{
+      width: 25%;
+      padding:  0 15px;
+      }
+      .footer-col h4{
+        font-size: 18px;
+        color:#ffffff;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      
+      }
+      .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      
+      }
+      .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+      }
+      .footer-col ul li a{
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+      }
+      .footer-col ul li a:hover{
+      
+        color: #ffffff;
+        padding-left: 8px;
+      
+      }
+      .footer-col .social-links a{
+      
+      display: inline-block;
+      
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+      
+      }
+      .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color:#ffffff ;
+      }
+      /*responsive footer*/
+      @media(max-width:767px){
+      
+      .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+      }
+    }
+      @media(max-width:574px){
+      
+      .footer-col{
+      width: 100%;
+      
+      }
+      }
+
+      /*footer end*/
+
+
     </style>
 </head>
 <body>
@@ -106,19 +212,8 @@ body{
               <li class="nav-item">
                 <a class="nav-link" href="./beer.html">BEER</a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ABOUT</a></li>
-                <li><a class="dropdown-item" href="#">CONTACT</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+    
+              
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   GIFTS & ACCESSORIES
@@ -130,15 +225,12 @@ body{
                 <a  class="dropdown-item" href="">BEER & BRAN GIFT</a>
                   </li>
                   <li><a class="dropdown-item" href="#">GIFT VOURCHER</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+             
                 </ul>
               </li>
           </ul>
           
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        
         </div>
       </div>
     </div>
@@ -289,6 +381,74 @@ body{
    <!--6-->
 
 </div>
+
+
+
+
+<!--last container-->
+
+
+
+<footer class="footer">
+  <div class="contain">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Affiliate Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Wines</a></li>
+          <li><a href="#">GIFTS</a></li>
+          <li><a href="#">Points</a></li>
+          <li><a href="#">Discount</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Handles</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+
+ 
+
+
+    </div>
+  </div>
+
+
+
+
+</footer>
+
+
+
 
 
 
